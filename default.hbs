@@ -23,13 +23,16 @@
 				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 			<![endif]-->  
+        <link rel="me" type="text/html" href="https://plus.google.com/+JamesSkimming?rel=me" />
+        <link rel="me" type="text/html" href="https://twitter.com/JamesSkimming" />
+        <link rel="me" type="text/html" href="https://www.facebook.com/james.skimming" />
 			{{{block "head"}}}  
 	    {{ghost_head}}
 	</head>
 	<body class="{{body_class}}">
 		<header id="header">
-			{{#if @blog.logo}}<a id="logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-			<h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+			{{#if @blog.logo}}<a id="logo" href="{{@blog.url}}" rel="home"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+			<h1><a href="{{@blog.url}}" rel="home">{{@blog.title}}</a></h1>
 			<p>{{@blog.description}}</p>
 			{{> follow}}
 			{{navigation}}
